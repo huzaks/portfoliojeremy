@@ -1,6 +1,5 @@
 {
-  "homepage": "http://huzaks.github.io/portfoliojeremy",
-  "name": "portfolio_jeremy",
+  "name": "portfoliojeremy",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,8 +7,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -24,5 +21,17 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzaks/portfoliojeremy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huzaks/portfoliojeremy/issues"
   }
 }
