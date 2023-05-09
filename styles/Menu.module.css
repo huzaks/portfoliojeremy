@@ -1,0 +1,23 @@
+.nav {align-items: center;}
+
+.ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+
+.li {
+    margin-left: 1rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-decoration: none;  
+}
+
+.li:hover {color: beige; }
+
+@media (max-width:36rem) {
+    .ul {
+        padding: 0;
+    }
+}

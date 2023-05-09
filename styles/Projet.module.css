@@ -1,0 +1,78 @@
+.titre {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    animation: desc 0.7s;
+}
+
+.h3 {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    display: none;
+}
+
+.description{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 885px;
+    padding: 1rem;
+    animation: desc 0.7s;
+}
+
+.container {
+    margin: 0rem;
+    padding-top: 1rem;
+    color: white;   
+}
+
+.cont {
+    padding: 1rem;
+    position: relative;
+    border-bottom: 1px solid white;
+    max-width: 55.31rem;
+    max-height: 42.88rem;
+    margin: 0 auto;
+    animation: projet 0.7s;
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+
+.paragraphe_droite {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    font-size: 105%;
+}
+
+@media (max-width: 44rem){
+    .description{width: 90%;}
+    
+    .paragraphe_droite {display: none;}
+    
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .h3 {display: block;}
+}
+
+@keyframes projet {
+	from {transform: scale(0) translateX(-100%);}
+	to {transform: scale(1) translateX(0%);}
+}
+@keyframes desc {
+	from {transform: scale(0) translateY(-100%);}
+    to {transform: scale(1) translateX(0%);}
+}
