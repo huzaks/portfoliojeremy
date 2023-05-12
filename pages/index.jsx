@@ -27,7 +27,7 @@ export default function Accueil() {
             </div>
             <div className={styles.image1_stack__item_top}>
                 <div className={styles.boite_noire}>
-                    <div>tyingBonjour, je m&apos;appelle Jérémy Lavallée-Giroux, appelé sous le nom de &quot;Jay&quot; selon l&apos;homme qui me porte dans ses bras! Ça fait maintenant 1 an que je programme avec C#, Javascript et React.
+                    <div>Bonjour, je m&apos;appelle Jérémy Lavallée-Giroux, appelé sous le nom de &quot;Jay&quot; selon l&apos;homme qui me porte dans ses bras! Ça fait maintenant 1 an que je programme avec C#, Javascript et React.
                         Voici alors mon portfolio, où je vous montre quelques projets intéressants que j&apos;ai réalisé au courant de mon séjour scolaire.</div>
                     <div><Image src={jeremy} className={styles.jeremy} alt="Image de Jeremy"></Image></div>
                 </div>
