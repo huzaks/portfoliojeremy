@@ -58,7 +58,7 @@
   
 }
 
-@media (max-width: 38rem) {
+@media (max-width: 42rem) {
   .header {
     padding: 0;
     height: 5rem;
@@ -70,6 +70,7 @@
   .button {
     display: block;
   }
+ 
 }
 @media (max-width: 330px) {
 
@@ -78,7 +79,7 @@
   }
 
 }
-@media (min-width: 38rem) {
+@media (min-width: 42rem) {
   .ul {
     display: none;
   }
@@ -88,9 +89,9 @@
 }
 @keyframes testing {
   from {
-    transform: translateX(100px);
+    transform: translateY(-100px);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
