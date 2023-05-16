@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Accueil.module.css";
+import background from '../public/background.jpg'
 import Projet1 from "../components/Projet1";
 import Projet2 from "../components/Projet2";
 import Projet3 from "../components/Projet3";
