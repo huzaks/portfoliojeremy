@@ -23,6 +23,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 export default function Accueil() {
   return (
     <>
+    
       <Head>
         <title>Accueil</title>
         <meta
