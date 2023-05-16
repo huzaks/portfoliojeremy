@@ -63,11 +63,33 @@ margin: 0 auto;
   color: #000000;
   font-weight: 500;
 }
+.mobiledesc {
+    display: none;
+}
 
 @media (max-width: 44rem) {
-  .paragraphe_droite {
+  
+.cont {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+} 
+.paragraphe_droite {
     display: none;
-  }
+}
+
+.mobiledesc {
+    display: block;
+    text-align: center;
+    color: #000;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: #00000059 0px 10px 30px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
+}
 
   .image {
     width: 100%;
