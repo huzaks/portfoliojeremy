@@ -1,5 +1,5 @@
 .titre {
-    color: white;
+    color: var(--titles);
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
@@ -7,7 +7,7 @@
 }
 
 .h3 {
-    color: white;
+    color: var(--titles);
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
@@ -16,12 +16,13 @@
 
 .description{
     border: 1px solid white;
-    color: white;
+    color: #000000;
     text-align: center;
     margin: 0 auto;
     max-width: 885px;
     padding: 1rem;
     animation: desc 0.7s;
+    font-weight: 600;
 }
 
 .container {
@@ -38,12 +39,14 @@
     max-height: 42.88rem;
     margin: 0 auto;
     animation: projet 0.7s;
+    
 }
 
 .image {
     width: 50%;
     height: 50%;
     border-radius: 10px;
+    box-shadow: #00000059 0px 5px 15px;
 }
 
 
@@ -53,6 +56,8 @@
     left: 50%;
     bottom: 40%;
     font-size: 105%;
+    color: #000000;
+    font-weight: 500;
 }
 
 @media (max-width: 44rem){

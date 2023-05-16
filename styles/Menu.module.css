@@ -9,15 +9,16 @@
 
 .li {
     margin-left: 1rem;
-    color: #ffffff;
+    color: var(--titles);
     font-size: 1.3rem;
     text-decoration: none;  
+    font-weight: bold;
 }
 
-.li:hover {color: beige; }
 
-@media (max-width:36rem) {
+@media (max-width:38rem) {
     .ul {
         padding: 0;
+        display: none;
     }
 }

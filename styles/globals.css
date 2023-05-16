@@ -1,8 +1,21 @@
-html {box-sizing: border-box;}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-*, *::before, *::after {box-sizing: inherit;}
+:root {
+    --titles: #3d0ac9;
+    /* #c953f8*/
+}
+html {
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 main {
-    background-color: rgb(0, 0, 0);
-    padding-bottom: 1rem;
+  
+  padding-bottom: 1rem;
 }
