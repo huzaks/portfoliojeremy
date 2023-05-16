@@ -5,7 +5,7 @@ import Projet2 from "../components/Projet2";
 import Projet3 from "../components/Projet3";
 import display1 from "../public/Projet1Home.png";
 import display2 from "../public/Calculatrice.png";
-import display3 from "../public/mangashop.png";
+import display3 from "../public/mangashop.JPG";
 import nodejs from "../public/Node.js_logo.png";
 import react from "../public/React_logo.png";
 import csharp from "../public/csharp_logo.png";
