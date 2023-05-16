@@ -10,7 +10,7 @@ html {
  
 }
 body {
-  background-image: url('/background.jpg');
+  background-image: url('../public/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
