@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-.li {
+.link {
     margin-left: 1rem;
     color: var(--titles);
     font-size: 1.3rem;
@@ -16,7 +16,7 @@
 }
 
 
-@media (max-width:42rem) {
+@media (max-width:55rem) {
     .ul {
         padding: 0;
         display: none;

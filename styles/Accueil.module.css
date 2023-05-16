@@ -1,108 +1,162 @@
 .container {
-    margin: 0rem;
-    padding-top: 0rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+  align-items: center;
+}
+.introduction {
+  font-weight: 600;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.display {
+  border: 1px solid #000;
+}
+
+.box {
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  margin: 2rem 2rem 0 2rem;
+  border-radius: 15px;
+  box-shadow: #00000059 0px 10px 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.react {
+  color: blue;
+  font-weight: bold;
+}
+.icon {
+  color: blue;
+  height: 1.1rem;
+}
+.logo {
+  margin-right: 0.5rem;
+}
+
+.jeremy {
+  box-shadow: #00000059 0px 5px 15px;
 }
 
 /*pour pouvoir overlap ma boite noire par dessus l'image, jai utilisé la méthode de grid venant de ce lien https://bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 .image_stack {
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(12, 1fr);
-    max-width: 55.31rem;
-    max-height: 42.88rem;
-    margin: 0 auto;
-    animation: contenu 0.7s;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 55.31rem;
+  max-height: 42.88rem;
+  margin: 0 auto;
+  animation: contenu 0.7s;
 }
 
 .image_stack__item_bottom {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    animation: contenu 0.7s;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  animation: contenu 0.7s;
 }
 
 .image1_stack__item_top {
-    position: relative;
-    grid-row: 1;
-    grid-column: 5 / span 8;
-    padding-top: 20%;
-    z-index: 1;
-    animation: contenu 0.7s;
+  position: relative;
+  grid-row: 1;
+  grid-column: 5 / span 8;
+  padding-top: 20%;
+  z-index: 1;
+  animation: contenu 0.7s;
 }
 
 .image2_stack__item_top {
-    position: relative;
-    grid-row: 1;
-    grid-column: 1 / span 8;
-    padding-top: 20%;
-    z-index: 1;
-}
-
-.image {
-    margin-top: 1rem;
-    width: 100%;
-    height: 100%;
-    animation: contenu 0.7s;
-}
-
-.jeremy {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 1rem;
-    width: 40%;
-    height: 40%;
-    animation: contenu 0.7s;
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / span 8;
+  padding-top: 20%;
+  z-index: 1;
 }
 
 .boite_noire {
-    border: 2px solid white;
-    margin-top: 1rem;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: relative;
-    opacity: 80%;
-    animation: contenu 0.7s;
+  border: 2px solid white;
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  opacity: 80%;
+  animation: contenu 0.7s;
 }
 
-
-
 .lien_projets {
-    text-align: center;
-    padding-top: 1.245rem;
-    color: White;
+  text-align: center;
+  padding-top: 1.245rem;
+  color: var(--titles);
 }
 
 .image_projets {
-    margin-top: 1rem;
-    width: 100%;
-    height: 100%;
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.description {
+  display: none;
+}
+@media (max-width: 438px) {
+  .container {
+    flex-direction: column;
+  }
+  .jeremy {
+    width: 200px;
+    height: 265px;
+  }
+  .box {
+    padding: 0;
+    margin: 2rem 0 0 0;
+  }
+}
+@media (max-width: 1000px) {
+  .introduction {
+    background-color: #fff;
+    box-shadow: #00000059 0px 10px 30px;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 36rem) {
+  .image1_stack__item_top {
+    grid-column: 3 / span 8;
+  }
+
+  .image2_stack__item_top {
+    grid-column: 3 / span 8;
+  }
+
+  .image_projets {
+    display: none;
+  }
+
+  .description {
     display: block;
+  }
+
+  .boite_noire {
+    margin: 0 auto;
+  }
 }
-
-.description {display: none;}
-
-@media(max-width:36rem) {
-    .image1_stack__item_top {grid-column: 3 / span 8;}
-
-    .image2_stack__item_top {grid-column: 3 / span 8;}
-
-    .image_projets {display: none;}
-
-    .description {display: block;}
-
-    .jeremy {display: none; }
-
-    .boite_noire {margin: 0 auto;}
-}
-
-
 
 @keyframes contenu {
-    from {transform: scale(0) translateX(-100%);}
+  from {
+    transform: scale(0) translateX(-100%);
+  }
 
-    to {transform: scale(1) translateX(0%);}
+  to {
+    transform: scale(1) translateX(0%);
+  }
 }
-

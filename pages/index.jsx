@@ -1,43 +1,126 @@
-import Image from 'next/image';
+import Image from "next/image";
 import styles from "../styles/Accueil.module.css";
-import ComposantAccueil from '../components/ComposantAccueil';
+import background from "../public/background.jpg";
+import Projet1 from "../components/Projet1";
+import Projet2 from "../components/Projet2";
+import Projet3 from "../components/Projet3";
+import display1 from "../public/Projet1Home.png";
+import display2 from "../public/Calculatrice.png";
+import display3 from "../public/mangashop.png";
+import nodejs from "../public/Node.js_logo.png";
+import react from "../public/React_logo.png";
+import csharp from "../public/csharp_logo.png";
+import prisma from "../public/prisma_logo.png";
+import html5 from "../public/html5.png";
+import css3 from "../public/css-3.svg";
+import jscript from "../public/JavaScript.png";
+import tscript from "../public/Typescript_logo.png";
+import jeremy from "../public/jeremy.jpg";
 
-import image1 from '../public/ascn.jpeg';
-import image2 from '../public/climber.jpg';
-import image3 from '../public/vinland.png';
-import jeremy from '../public/jeremy.jpg';
-import projet1home from '../public/Projet1Home.png';
-import projet2Calculatrice from '../public/Calculatrice.png';
-import Head from 'next/head';
+import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 export default function Accueil() {
-    return <>
-    <Head>
+  return (
+    <>
+      <Head>
         <title>Accueil</title>
-        <meta name="description" content="Présentation de moi et de mes projets."/>
-        <meta property="og:title" content="Accueil"/>
-        <meta property="og:description" content="Présentation de moi et de mes projets."/>
-        
-    </Head>
-    <main>
+        <meta
+          name="description"
+          content="Présentation de moi et de mes projets."
+        />
+        <meta property="og:title" content="Accueil" />
+        <meta
+          property="og:description"
+          content="Présentation de moi et de mes projets."
+        />
+      </Head>
+      <main>
         <div className={styles.container}>
-        <div className={styles.image_stack}>
-            <div className={styles.image_stack__item_bottom}>
-                <Image src={image1} className={styles.image} alt="Image Manga Ascencion"></Image>
-            </div>
-            <div className={styles.image1_stack__item_top}>
-                <div className={styles.boite_noire}>
-                    <div>Bonjour, je m&apos;appelle Jérémy Lavallée-Giroux, appelé sous le nom de &quot;Jay&quot; selon l&apos;homme qui me porte dans ses bras! Ça fait maintenant 1 an que je programme avec C#, Javascript et React.
-                        Voici alors mon portfolio, où je vous montre quelques projets intéressants que j&apos;ai réalisé au courant de mon séjour scolaire.</div>
-                    <div><Image src={jeremy} className={styles.jeremy} alt="Image de Jeremy"></Image></div>
-                </div>
-            </div>
+          <div className={styles.introduction}>
+            Je m&apos;appelle Jérémy Lavallée-Giroux, appelé sous le nom de
+            &quot;Jay&quot; selon l&apos;homme qui me porte dans ses bras! Je
+            suis programmeur fullstack avec{" "}
+            <span className={styles.react}>
+              React.js{" "}
+              <FontAwesomeIcon icon={faReact} className={styles.icon} />
+            </span>
+            . Vous trouverez ici mes projets ainsi qu&apos;une page de contact.
+          </div>
+
+          <Image
+            src={jeremy}
+            width={262}
+            height={350}
+            className={styles.jeremy}
+            alt="Image de Jeremy"
+          ></Image>
         </div>
         <h2 className={styles.lien_projets}>Projets</h2>
-        <ComposantAccueil lien="/projet1" src1={image3} alt1="Image Manga Vinland Saga" class1={styles.image2_stack__item_top} titre="Premier Projet" desc="Ce projet consistait à créer un site web qui permettait à un utilisateur connecté de s&apos;inscrire à des tournois de jeux vidéo à La Cité. L&apos;utilisateur peut également se désinscrire à un tournoi.Celui qui a les droits administratifs peut voir les changements liés aux inscriptions, désinscription, création de tournoi et suppression de tournois en temps réel." src2={projet1home} alt2="Image Projet Tournois"></ComposantAccueil>
-        <ComposantAccueil lien="/projet2" src1={image2} alt1="Image Manga Ascencion" class1={styles.image1_stack__item_top} titre="Deuxième Projet" desc="Ce projet WPF C# consistait à faire une simple réplique de la calculatrice Windows. Elle permet le pourcentage du nombre écrit, la division 1/le nombre, l&apos;exposant 2, la racine carrée, la division, la multiplication, l&apos;addition et la soustraction de deux nombres." src2={projet2Calculatrice} alt2="Image Projet Calculatrice"></ComposantAccueil>
-
-    </div>
-    </main>
+        <div className={styles.projects}>
+          <Projet1
+            titre="Premier projet"
+            linkgif={display1}
+            desc="Ceci est la description du projet 1"
+            linktech1={nodejs}
+            titletech1="Node.js logo"
+            width1={52}
+            height1={32}
+            linktech2={html5}
+            titletech2="Html 5 logo"
+            width2={32}
+            height2={32}
+            linktech3={css3}
+            titletech3="CSS3 logo"
+            width3={25}
+            height3={28}
+            linktech4={jscript}
+            titletech4="Javascript logo"
+            width4={32}
+            height4={32}
+          />
+          <Projet2
+            titre="Deuxième projet"
+            linkgif={display2}
+            desc="Ceci est la description du projet 2"
+            linktech={csharp}
+            titletech="C# logo"
+            width={32}
+            height={32}
+          />
+          <Projet3
+            titre="Troisième projet"
+            linkgif={display3}
+            desc="Ceci est la description du projet 3"
+            linktech1={nodejs}
+            titletech1="Node.js logo"
+            width1={52}
+            height1={32}
+            linktech2={html5}
+            titletech2="Html 5 logo"
+            width2={32}
+            height2={32}
+            linktech3={css3}
+            titletech3="CSS3 logo"
+            width3={25}
+            height3={28}
+            linktech4={tscript}
+            titletech4="Typescript logo"
+            width4={32}
+            height4={32}
+            linktech5={react}
+            titletech5="React logo"
+            width5={35}
+            height5={32}
+            linktech6={prisma}
+            titletech6="Prisma logo"
+            width6={60}
+            height6={32}
+          />
+        </div>
+      
+      </main>
     </>
+  );
 }

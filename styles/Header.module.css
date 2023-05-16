@@ -9,7 +9,7 @@
 .titre {
   margin: 0;
   color: var(--titles);
-  text-shadow: #ab92f0 5px 5px 8px;
+  text-shadow: #e7deff 5px 5px 8px;
 }
 
 .div {
@@ -49,7 +49,7 @@
 .ul_no_show {
   display: none;
 }
-.li {
+.link {
   padding: 0.8rem;
   color: var(--titles);
   font-size: 1.3rem;
@@ -58,7 +58,8 @@
   
 }
 
-@media (max-width: 42rem) {
+
+@media (max-width: 55rem) {
   .header {
     padding: 0;
     height: 5rem;
@@ -72,14 +73,14 @@
   }
  
 }
-@media (max-width: 330px) {
+@media (max-width: 350px) {
 
   .titre {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
 }
-@media (min-width: 42rem) {
+@media (min-width: 55rem) {
   .ul {
     display: none;
   }

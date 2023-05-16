@@ -21,16 +21,16 @@ export default function Header() {
       />
 
       <ul className={isOpen ? styles.ul : styles.ul_no_show}>
-        <Link href="/" className={styles.li}>
+        <Link href="/" className={styles.link}>
           <li onClick={() => setOpen(false)}>À Propos</li>
         </Link>
-        <Link href="/projet1" className={styles.li}>
+        <Link href="/projet1" className={styles.link}>
           <li onClick={() => setOpen(false)}>Premier Projet</li>
         </Link>
-        <Link href="/projet2" className={styles.li}>
+        <Link href="/projet2" className={styles.link}>
           <li onClick={() => setOpen(false)}>Deuxième Projet</li>
         </Link>
-        <Link href="/contact" className={styles.li}>
+        <Link href="/contact" className={styles.link}>
           <li onClick={() => setOpen(false)}>Contact</li>
         </Link>
       </ul>
