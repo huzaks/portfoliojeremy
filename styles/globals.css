@@ -7,11 +7,13 @@
 html {
   box-sizing: border-box;
   font-family: poppins, sans-serif;
-  background-image: url('../public/background.jpg');
+ 
+}
+body {
+  background-image: url('/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 *,
 *::before,
 *::after {
