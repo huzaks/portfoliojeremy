@@ -11,7 +11,8 @@ export default function Contact() {
     
 </Head>
     <main>
-    <Formulaire/>
+        Non disponible pour le moment
+    {/* <Formulaire/> */}
     </main>
     </>
 }

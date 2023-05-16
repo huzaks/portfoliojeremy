@@ -23,6 +23,7 @@ export default function Projet2({
           height={height}
           alt={titletech}
           className={styles.logo}
+          title="C#"
         />
       </div>
     </>

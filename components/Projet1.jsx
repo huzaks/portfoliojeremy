@@ -35,6 +35,7 @@ export default function Projet1({
           height={height1}
           alt={titletech1}
           className={styles.logo}
+          title="Node.js"
         />
         <Image
           src={linktech2}
@@ -42,6 +43,7 @@ export default function Projet1({
           height={height2}
           alt={titletech2}
           className={styles.logo}
+          title="HTML 5"
         />
         <Image
           src={linktech3}
@@ -49,6 +51,7 @@ export default function Projet1({
           height={height3}
           alt={titletech3}
           className={styles.logo}
+          title="CSS3"
         />
         <Image
           src={linktech4}
@@ -56,6 +59,7 @@ export default function Projet1({
           height={height4}
           alt={titletech4}
           className={styles.logo}
+          title="Javascript"
         />
       </div>
     </>

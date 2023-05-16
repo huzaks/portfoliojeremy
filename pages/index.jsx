@@ -29,34 +29,34 @@ export default function Accueil() {
         <title>Accueil</title>
         <meta
           name="description"
-          content="Présentation de moi et de mes projets."
+          content="Présentation de mon profil."
         />
         <meta property="og:title" content="Accueil" />
         <meta
           property="og:description"
-          content="Présentation de moi et de mes projets."
+          content="Présentation de mon profil."
         />
       </Head>
       <main>
         <div className={styles.container}>
           <div className={styles.introduction}>
-            Je m&apos;appelle Jérémy Lavallée-Giroux, appelé sous le nom de
-            &quot;Jay&quot; selon l&apos;homme qui me porte dans ses bras! Je
-            suis programmeur fullstack avec{" "}
+            Je m&apos;appelle Jérémy Lavallée-Giroux, je
+            suis développeur fullstack avec{" "}
             <span className={styles.react}>
               React.js{" "}
               <FontAwesomeIcon icon={faReact} className={styles.icon} />
             </span>
-            . Vous trouverez ici mes projets ainsi qu&apos;une page de contact.
+            . Vous trouverez mes projets vers le bas.
           </div>
 
           <Image
             src={jeremy}
-            width={262}
+            width={310}
             height={350}
             className={styles.jeremy}
             alt="Image de Jeremy"
             priority
+            title="Image de Jeremy"
           ></Image>
         </div>
         <h2 className={styles.lien_projets}>Projets</h2>

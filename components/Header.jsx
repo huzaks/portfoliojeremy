@@ -30,9 +30,13 @@ export default function Header() {
         <Link href="/projet2" className={styles.link}>
           <li onClick={() => setOpen(false)}>Deuxième Projet</li>
         </Link>
-        <Link href="/contact" className={styles.link}>
-          <li onClick={() => setOpen(false)}>Contact</li>
+        <Link href="/projet3" className={styles.link}>
+          <li onClick={() => setOpen(false)}>Troisième Projet</li>
         </Link>
+        {/* <Link href="/contact" className={styles.link}>
+          <li onClick={() => setOpen(false)}>Contact</li>
+        </Link> */}
+        
       </ul>
     </header>
   );

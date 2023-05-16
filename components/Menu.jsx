@@ -11,8 +11,8 @@ export default function Menu() {
             <Link href="/projet2" className={styles.link}><li>Deuxième Projet</li></Link>
             <li className={styles.link}>|</li>
             <Link href="/projet3" className={styles.link}><li>Troisième Projet</li></Link>
-            <li className={styles.link}>|</li>
-            <Link href="/contact" className={styles.link}><li>Contact</li></Link>
+            {/* <li className={styles.link}>|</li>
+            <Link href="/contact" className={styles.link}><li>Contact</li></Link> */}
         </ul>
     </nav>
 }
