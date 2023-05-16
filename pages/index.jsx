@@ -56,6 +56,7 @@ export default function Accueil() {
             height={350}
             className={styles.jeremy}
             alt="Image de Jeremy"
+            priority
           ></Image>
         </div>
         <h2 className={styles.lien_projets}>Projets</h2>
@@ -63,7 +64,7 @@ export default function Accueil() {
           <Projet1
             titre="Premier projet"
             linkgif={display1}
-            desc="Ceci est la description du projet 1"
+            desc="Site web d'inscription à des tournois à la Cité"
             linktech1={nodejs}
             titletech1="Node.js logo"
             width1={52}
@@ -84,7 +85,7 @@ export default function Accueil() {
           <Projet2
             titre="Deuxième projet"
             linkgif={display2}
-            desc="Ceci est la description du projet 2"
+            desc="Calculatrice fonctionnelle avec C#"
             linktech={csharp}
             titletech="C# logo"
             width={32}
@@ -93,7 +94,7 @@ export default function Accueil() {
           <Projet3
             titre="Troisième projet"
             linkgif={display3}
-            desc="Ceci est la description du projet 3"
+            desc="Site web magasin de manga"
             linktech1={nodejs}
             titletech1="Node.js logo"
             width1={52}
