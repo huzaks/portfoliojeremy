@@ -21,14 +21,7 @@
   border: 1px solid #000;
 }
 
-.box {
-  text-align: center;
-  padding: 0 2rem 0 2rem;
-  margin: 2rem 2rem 0 2rem;
-  border-radius: 15px;
-  box-shadow: #00000059 0px 10px 30px;
-  transition: 0.3s;
-}
+
 .react {
   color: blue;
   font-weight: bold;
@@ -46,6 +39,16 @@
   border-radius: 50px;
 }
 
+.link {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  margin: 2rem 2rem 0 2rem;
+  border-radius: 15px;
+  box-shadow: #00000059 0px 10px 30px;
+  transition: 0.3s;
+}
 .lien_projets {
   text-align: center;
   padding-top: 1.245rem;
@@ -63,7 +66,7 @@
     width: 180px;
     height: 200px;
   }
-  .box {
+  .link {
     padding: 0;
     margin: 2rem 0 0 0;
   }

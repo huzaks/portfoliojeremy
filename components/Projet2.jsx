@@ -13,7 +13,7 @@ export default function Projet2({
 }) {
   return (
     <>
-      <div className={styles.box}>
+      <Link href={'/projet2'} className={styles.link}>
         <h3>{titre}</h3>
         <Image src={linkgif} width={315} height={159} alt={titre} className={styles.display} />
         <p>{desc}</p>
@@ -25,7 +25,7 @@ export default function Projet2({
           className={styles.logo}
           title="C#"
         />
-      </div>
+      </Link>
     </>
   );
 }

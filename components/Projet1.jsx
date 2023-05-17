@@ -25,7 +25,8 @@ export default function Projet1({
 }) {
   return (
     <>
-      <div className={styles.box}>
+      <Link href='/projet1' className={styles.link}>
+      
         <h3>{titre}</h3>
         <Image src={linkgif} width={315} height={159} alt={titre} className={styles.display}/>
         <p>{desc}</p>
@@ -61,7 +62,7 @@ export default function Projet1({
           className={styles.logo}
           title="Javascript"
         />
-      </div>
+      </Link>
     </>
   );
 }
