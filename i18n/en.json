@@ -13,7 +13,7 @@
     "app.header.link5": "Contact",
     "app.projet1.title": "Tournaments at La Cité Collégiale",
     "app.projet1.description": "This project consisted of creating a website that allowed a connected user to register for video game tournaments at La Cité. The user can also unsubscribe from a tournament. Those who have administrative rights can see the changes related to registrations, unsubscription, tournament creation and tournament deletion in real time.",
-    "app.projet1.inscriptiontitle": "Inscription",
+    "app.projet1.inscriptiontitle": "Registration",
     "app.projet1.inscriptiondesc": "To create an account, the user must enter an email address, a password, as well as his first and last name. Account creation is successful if the user returns to the home page.",
     "app.projet1.connexiontitle": "Connexion",
     "app.projet1.connexiondesc": "To log in to their account, the user goes to the login page at the top right. He then enters his email and the password associated with it in the boxes.",
