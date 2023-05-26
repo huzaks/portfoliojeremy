@@ -20,13 +20,13 @@ import jeremy from "../public/jeremy.jpg";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
-
+import { FormattedMessage } from "react-intl";
 export default function Accueil() {
   return (
     <>
     
       <Head>
-        <title>Accueil</title>
+        <title>Portfolio</title>
         <meta
           name="description"
           content="Présentation de mon profil."
@@ -40,13 +40,14 @@ export default function Accueil() {
       <main>
         <div className={styles.container}>
           <div className={styles.introduction}>
-            Je m&apos;appelle Jérémy Lavallée-Giroux, je
-            suis développeur fullstack avec{" "}
+          <FormattedMessage id="app.home.aboutbefore"/>
+            
             <span className={styles.react}>
               React.js{" "}
               <FontAwesomeIcon icon={faReact} className={styles.icon} />
             </span>
-            . Vous trouverez mes projets vers le bas.
+            
+            <FormattedMessage id="app.home.aboutafter"/>
           </div>
 
           <Image
@@ -59,7 +60,7 @@ export default function Accueil() {
             title="Image de Jeremy"
           ></Image>
         </div>
-        <h2 className={styles.lien_projets}>Projets</h2>
+        <h2 className={styles.lien_projets}><FormattedMessage id="app.home.lienprojet"/></h2>
         <div className={styles.projects}>
           <Projet1
             titre="Premier projet"

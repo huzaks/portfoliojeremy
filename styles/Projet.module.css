@@ -30,7 +30,9 @@ margin: 0 auto;
 
 
 }
-
+.link {
+  color: #4561e0;
+}
 .container {
   margin: 0rem;
   padding-top: 1rem;

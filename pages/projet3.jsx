@@ -5,12 +5,13 @@ import Link from "next/link";
 import search from "../public/mangashopsearch.gif";
 import addAndUpdate from "../public/addandupdatecart.gif";
 import addAndRemove from "../public/addandremovewish.gif";
+import { FormattedMessage } from "react-intl";
 
 export default function Projet3() {
   return (
     <>
       <Head>
-        <title>Troisième projet</title>
+        <title>Portfolio</title>
         <meta name="description" content="Présentation du projet Manga Shop." />
         <meta property="og:title" content="Troisième Projet" />
         <meta
@@ -20,32 +21,30 @@ export default function Projet3() {
       </Head>
       <main>
         <h2 className={styles.titre}>
-          Manga Shop - Le lien sera disponible sous peu
+          <FormattedMessage id="app.projet3.title" /> <Link href="https://mangashop-nu.vercel.app/" className={styles.link}><FormattedMessage id="app.projet3.link"/></Link>
         </h2>
         <div className={styles.description}>
-          Ce projet consiste à imiter un magasin en ligne de manga.
-          L&apos;utilisateur peut ainsi se créer un compte et placer des livres
-          dans son panier.
+          <FormattedMessage id="app.projet3.description"/>
         </div>
 
         <div className={styles.container}>
           <Projets
-            h3="Rechercher un livre"
+            h3="app.projet3.findtitle"
             src={search}
             alt="Gif Addition et Soustraction"
-            desc="L'utilisateur peut rechercher un livre par son nom, ou par catégorie"
+            desc="app.projet3.finddesc"
           ></Projets>
           <Projets
-            h3="Ajouter au panier"
+            h3="app.projet3.addcarttitle"
             src={addAndUpdate}
             alt="Gif Multiplication et Division"
-            desc="L'utilisateur peut ajouter un produit à son panier et modifier sa quantité dans son panier."
+            desc="app.projet3.addcartdesc"
           ></Projets>
           <Projets
-            h3="Ajouter à la liste de souhait"
+            h3="app.projet3.addwishtitle"
             src={addAndRemove}
             alt="Gif 1/Nombre & Pourcentage"
-            desc="L'utilisateur peut ajouter un produit à sa liste de souhait et le retirer de celle-ci."
+            desc="app.projet3.addwishdesc"
           ></Projets>
         </div>
       </main>
