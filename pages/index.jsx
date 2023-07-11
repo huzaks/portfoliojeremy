@@ -19,7 +19,7 @@ import jeremy from "../public/jeremy.jpg";
 
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FormattedMessage } from "react-intl";
 export default function Accueil() {
   return (
@@ -48,6 +48,7 @@ export default function Accueil() {
             </span>
             
             <FormattedMessage id="app.home.aboutafter"/>
+           
           </div>
 
           <Image
@@ -60,7 +61,9 @@ export default function Accueil() {
             title="Image de Jeremy"
           ></Image>
         </div>
+        <div className={styles.tesing}>
         <h2 className={styles.lien_projets}><FormattedMessage id="app.home.lienprojet"/></h2>
+        </div>
         <div className={styles.projects}>
           <Projet1
             titre="Premier projet"

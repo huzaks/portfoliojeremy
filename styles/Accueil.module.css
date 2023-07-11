@@ -49,9 +49,14 @@
   box-shadow: #00000059 0px 10px 30px;
   transition: 0.3s;
 }
+.tesing {
+  display: flex;
+  margin: 0 auto;
+ justify-content: center;
+ 
+}
 .lien_projets {
-  text-align: center;
-  padding-top: 1.245rem;
+  margin-left: 2rem;
   color: var(--titles);
 }
 
@@ -83,6 +88,9 @@
     box-shadow: #00000059 0px 10px 30px;
     border-radius: 10px;
     padding: 0.5rem;
+  }
+  .lien_projets {
+    margin-left: 0;
   }
 }
 

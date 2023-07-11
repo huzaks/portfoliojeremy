@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.9rem;
+
+}
+
+.email {
+    font-weight: bold;
+    font-size: 20px;
+}
+.icons {
+    margin: 0.1rem;
+}
+.linkedin_icon {
+    width: 30px;
+    margin-right: 1rem;
+    color: #0a66c2;
+}
+.github_icon {
+    color: black;
+    width: 30px;
+}

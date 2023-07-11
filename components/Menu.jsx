@@ -8,7 +8,7 @@ export default function Menu() {
   const handleLocaleChange = (event) => {
     setLocale(event.target.checked ? 'en' : 'fr');
 }
-    return <nav className={styles.nav}>
+    return <nav>
         <ul className={styles.ul}>
             <Link href="/" className={styles.link}><li><FormattedMessage id="app.header.link1"/></li></Link>
             <li className={styles.link}>|</li>
