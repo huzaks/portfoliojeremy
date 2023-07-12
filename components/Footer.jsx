@@ -19,8 +19,8 @@ export default function Footer() {
           
         </div>
         <div className={styles.downloads}>
-          <a href={"/JeremyLavalleeGirouxResume.pdf"} download className={styles.cv}>Download Resume</a>
-          <a href={"/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
+          <a href={"https://huzaks.github.io/portfoliojeremy/JeremyLavalleeGirouxResume.pdf"} download={"Jeremy Lavallee-Giroux Resume"} className={styles.cv}>Download Resume</a>
+          <a href={"https://huzaks.github.io/portfoliojeremy/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
         </div>
       </footer>
     </>
