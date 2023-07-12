@@ -18,10 +18,10 @@ export default function Footer() {
           </Link>
           
         </div>
-        {/* <div className={styles.downloads}>
-          <a href={"../files/JeremyLavalleeGirouxResume.pdf"} download className={styles.cv}>Download Resume</a>
-          <a href={"../files/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
-        </div> */}
+        <div className={styles.downloads}>
+          <a href={"../public/JeremyLavalleeGirouxResume.pdf"} download className={styles.cv}>Download Resume</a>
+          <a href={"../public/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
+        </div>
       </footer>
     </>
   );
