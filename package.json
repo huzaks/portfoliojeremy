@@ -24,6 +24,7 @@
     "react-intl": "^6.4.2"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "gh-pages": "^5.0.0"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
