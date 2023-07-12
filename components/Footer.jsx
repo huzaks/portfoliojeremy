@@ -19,7 +19,7 @@ export default function Footer() {
           
         </div>
         <div className={styles.downloads}>
-          <a href={"../files/JeremyLavalleeGirouxResume.pdf"} download={"Jeremy Lavallee-Giroux Resume"} className={styles.cv}>Download Resume</a>
+          <a href={"../files/JeremyLavalleeGirouxResume.pdf"} download className={styles.cv}>Download Resume</a>
           <a href={"../files/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
         </div>
       </footer>
