@@ -1,7 +1,8 @@
 import styles from "../styles/Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import resume from "../public/JeremyLavalleeGirouxResume.pdf"
+// import resume from "/JeremyLavalleeGirouxResume.pdf"
+// import cv from "/JeremyLavalleeGirouxCV.pdf"
 import Link from "next/link";
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
           
         </div>
         <div className={styles.downloads}>
-          <a href={resume} download={"Jeremy Lavallee-Giroux Resume"} className={styles.cv}>Download Resume</a>
+          <a href={"/JeremyLavalleeGirouxResume.pdf"} download={"Jeremy Lavallee-Giroux Resume"} className={styles.cv}>Download Resume</a>
           <a href={"/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
         </div>
       </footer>
