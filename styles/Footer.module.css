@@ -13,14 +13,32 @@
     font-size: 20px;
 }
 .icons {
-    margin: 0.1rem;
+    margin: 1rem 0 0 0;
+}
+.downloads {
+    display: flex;
+    flex-direction: row;
 }
 .linkedin_icon {
     width: 30px;
-    margin-right: 1rem;
+    margin-right: 2rem;
     color: #0a66c2;
 }
 .github_icon {
     color: black;
     width: 30px;
+}
+.cv {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 1rem 0 0;
+    background-color: #0a66c2;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.cv:hover {
+    transform: scale(1.1);
 }

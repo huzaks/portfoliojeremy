@@ -17,6 +17,7 @@ import jscript from "../public/JavaScript.png";
 import tscript from "../public/Typescript_logo.png";
 import jeremy from "../public/jeremy.jpg";
 
+
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -48,7 +49,8 @@ export default function Accueil() {
             </span>
             
             <FormattedMessage id="app.home.aboutafter"/>
-           
+            
+
           </div>
 
           <Image
@@ -60,6 +62,7 @@ export default function Accueil() {
             priority
             title="Image de Jeremy"
           ></Image>
+          
         </div>
         <div className={styles.tesing}>
         <h2 className={styles.lien_projets}><FormattedMessage id="app.home.lienprojet"/></h2>

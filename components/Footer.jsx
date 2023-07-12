@@ -14,6 +14,11 @@ export default function Footer() {
           <Link href={'https://github.com/huzaks'}>
             <FontAwesomeIcon icon={faGithub} className={styles.github_icon} />
           </Link>
+          
+        </div>
+        <div className={styles.downloads}>
+          <a href={"/JeremyLavalleeGirouxResume.pdf"} download={"Jeremy Lavallee-Giroux Resume"} className={styles.cv}>Download Resume</a>
+          <a href={"/JeremyLavalleeGirouxCV.pdf"} download={"Jeremy Lavallee-Giroux CV"} className={styles.cv}>Télécharger CV</a>
         </div>
       </footer>
     </>
