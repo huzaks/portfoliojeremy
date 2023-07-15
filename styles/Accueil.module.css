@@ -48,6 +48,7 @@
   border-radius: 15px;
   box-shadow: #00000059 0px 10px 30px;
   transition: 0.3s;
+  border-top: 5px solid #0a66c2;
 }
 .tesing {
   display: flex;
@@ -88,6 +89,7 @@
     box-shadow: #00000059 0px 10px 30px;
     border-radius: 10px;
     padding: 0.5rem;
+    border: 5px 0 5px 0 solid #0a66c2;
   }
   .lien_projets {
     margin-left: 0;
