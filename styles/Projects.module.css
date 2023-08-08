@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  max-width: 60rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.imagecontainer {
+  width: 32rem;
+  border-radius: 15px;
+}
+.imagescroll {
+  width: 32rem;
+  height: 22rem;
+  background: #000;
+  background-position: top;
+  transition: 40s ease-in-out;
+  border-radius: 15px;
+}
+.image1 {
+  background-image: url("../public/mangashop-nu.vercel.app_.png");
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.imagescroll2 {
+  width: 32rem;
+  height: 22rem;
+  background: #000;
+  background-position: top;
+  transition: 10s ease-in-out;
+  border-radius: 15px;
+}
+.image2 {
+  background-image: url("../public/minissentials.vercel.app_.png");
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.imagescroll:hover {
+  background-position: bottom;
+}
+.imagescroll2:hover {
+  background-position: bottom;
+}
+.icon {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+  .link {
+    display:flex;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+.link:hover {
+    color: #0a66c2;
+}
+@media (max-width:850px) {
+  .container {
+   width: 544px;
+    flex-direction: column;
+  }
+  .imagescroll {
+    transition: 0s;
+  }
+  .imagescroll2 {
+   transition: 0s;
+  }
+  .imagescroll:hover {
+    background-position: top;
+  }
+  .imagescroll2:hover {
+    background-position: top;
+  }
+  .link {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width:570px) {
+  .imagecontainer{
+    width: 27rem;
+  }
+  .imagescroll {
+    width: 27rem;
+  }
+  .imagescroll2 {
+    width: 27rem;
+  }
+  .container {
+   width: 29rem;
+    flex-direction: column;
+  }
+  .link {
+    margin-bottom: 1rem;
+  }
+}

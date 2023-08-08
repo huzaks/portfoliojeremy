@@ -3,26 +3,26 @@ import Link from 'next/link';
 import { FormattedMessage } from "react-intl";
 import { useLocale } from "./LocaleProvider";
 export default function Menu() {
-    const [locale, setLocale] = useLocale();
+//     const [locale, setLocale] = useLocale();
 
-  const handleLocaleChange = (event) => {
-    setLocale(event.target.checked ? 'en' : 'fr');
-}
+//   const handleLocaleChange = (event) => {
+//     setLocale(event.target.checked ? 'en' : 'fr');
+// }
     return <nav>
         <ul className={styles.ul}>
-            <Link href="/" className={styles.link}><li><FormattedMessage id="app.header.link1"/></li></Link>
-            <li className={styles.link}>|</li>
-            <Link href="/projet1" className={styles.link}><li><FormattedMessage id="app.header.link2"/></li></Link>
-            <li className={styles.link}>|</li>
-            <Link href="/projet2" className={styles.link}><li><FormattedMessage id="app.header.link3"/></li></Link>
-            <li className={styles.link}>|</li>
-            <Link href="/projet3" className={styles.link}><li><FormattedMessage id="app.header.link4"/></li></Link>
-            <li className={styles.link}>|</li>
-            <li><label className={styles.switch}>
+            <li><Link href="/#home" className={styles.link}>Home</Link></li>
+            
+            <li><Link href="/#about" className={styles.link}>About</Link></li>
+            
+            <li><Link href="/#projects" className={styles.link}>Projects</Link></li>
+            
+            <li><Link href="/#contacts" className={styles.link}>Contact</Link></li>
+            
+            {/* <li><label className={styles.switch}>
         <input type="checkbox" checked={locale === 'en'}
         onChange={handleLocaleChange}/>
         <span className={styles.slider}></span>
-      </label></li>
+      </label></li> */}
         </ul>
     </nav>
 }

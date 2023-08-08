@@ -12,46 +12,54 @@ export default function Header() {
   const [locale, setLocale] = useLocale();
 
   const handleLocaleChange = (event) => {
-    setLocale(event.target.checked ? 'en' : 'fr');
-}
+    setLocale(event.target.checked ? "en" : "fr");
+  };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <div className={styles.div}>
-        <h1 className={styles.titre}><FormattedMessage id="app.header.title"/></h1>
+        <Link className={styles.titre} href={"/"}>
+          Jérémy.dev
+        </Link>
       </div>
-      
+
       <Menu />
-      
-      {isOpen ? <FontAwesomeIcon
-        icon={faXmark}
-        className={styles.button}
-        onClick={() => setOpen(!isOpen)}
-      /> : <FontAwesomeIcon
-      icon={faBars}
-      className={styles.button}
-      onClick={() => setOpen(!isOpen)}
-    />}
+
+      {isOpen ? (
+        <FontAwesomeIcon
+          icon={faXmark}
+          className={styles.buttonX}
+          onClick={() => setOpen(!isOpen)}
+        />
+      ) : (
+        <FontAwesomeIcon
+          icon={faBars}
+          className={styles.button}
+          onClick={() => setOpen(!isOpen)}
+        />
+      )}
 
       <ul className={isOpen ? styles.ul : styles.ul_no_show}>
-        <Link href="/" className={styles.link}>
-          <li onClick={() => setOpen(false)}><FormattedMessage id="app.header.link1"/></li>
-        </Link>
-        <Link href="/projet1" className={styles.link}>
-          <li onClick={() => setOpen(false)}><FormattedMessage id="app.header.link2"/></li>
-        </Link>
-        <Link href="/projet2" className={styles.link}>
-          <li onClick={() => setOpen(false)}><FormattedMessage id="app.header.link3"/></li>
-        </Link>
-        <Link href="/projet3" className={styles.link}>
-          <li onClick={() => setOpen(false)}><FormattedMessage id="app.header.link4"/></li>
-        </Link>
-        <li onClick={() => setOpen(false)}><label className={styles.switch}>
-        <input type="checkbox" checked={locale === 'en'}
-        onChange={handleLocaleChange}/>
-        <span className={styles.slider}></span>
-      </label></li>
-        
+        <li onClick={() => setOpen(false)}>
+          <Link href="/" className={styles.link}>
+            Home
+          </Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link href="/#about" className={styles.link}>
+            About
+          </Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link href="/#projects" className={styles.link}>
+            Projects
+          </Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link href="/#contacts" className={styles.link}>
+            Contacts
+          </Link>
+        </li>
       </ul>
     </header>
   );

@@ -1,19 +1,25 @@
 .footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     margin-top: 1rem;
-    padding: 1.9rem;
-
+    padding: 2rem;
+    background-color: #2b2b2b;
+    justify-content: space-between;
 }
 
 .email {
     font-weight: bold;
     font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.email:hover {
+    color: #0a66c2;
 }
 .icons {
     margin: 1rem 0 0 0;
+    align-self: flex-end;
 }
 .downloads {
     display: flex;
@@ -22,12 +28,23 @@
 .linkedin_icon {
     width: 30px;
     margin-right: 2rem;
-    color: #0a66c2;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
 }
 .github_icon {
-    color: black;
+    color: #fff;
     width: 30px;
+    cursor: pointer;
+    transition: 0.2s;
 }
+.linkedin_icon:hover {
+    color: #0a66c2;
+}
+.github_icon:hover {
+    color: #0a66c2;
+}
+
 .cv {
     display: block;
     padding: 1rem;
@@ -41,4 +58,14 @@
 }
 .cv:hover {
     transform: scale(1.1);
+}
+@media(max-width:800px){
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icons{
+        align-self: center;
+    }
 }
