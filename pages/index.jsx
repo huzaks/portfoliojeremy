@@ -13,7 +13,7 @@ import jeremy from "../public/jeremy.jpg";
 import laptop from "../public/laptop.png";
 import palm from "../public/palm.png";
 import Link from "next/link";
-import dev from "../public/devcircle.JPG";
+import dev from "../public/devcircle.jpg";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
