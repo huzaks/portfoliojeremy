@@ -111,6 +111,7 @@ export default function Accueil() {
             className={styles.palm}
             height={102}
             width={102}
+            
           />
           <div className={styles.grid}>
             <div className={styles.white}>

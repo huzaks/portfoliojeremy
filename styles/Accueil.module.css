@@ -437,6 +437,33 @@ flex-direction: column;
   }
 }
 @media (max-width:500px) {
+  .gridabout {
+    position: relative;
+  }
+  .skills {
+    position: unset;
+  }
+  .containerabout {
+    padding: 1rem;
+  }
+  .webdev {
+    display: none;
+  }
+  .palm {
+   left: 25%;
+  }
+  .grid {
+    left: 40%;
+  }
+  .about {
+    grid-row: 1/3;
+    padding: 3rem;
+  }
+}
+@media (max-width:430px) {
+  .gridabout {
+    position: relative;
+  }
   .containerabout {
     padding: 1rem;
   }
