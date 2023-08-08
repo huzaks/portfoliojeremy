@@ -69,3 +69,11 @@
         align-self: center;
     }
 }
+@media (max-width:370px) {
+    .footer {
+        text-align: center;
+    }
+    .email{
+        font-size: 1rem;
+    }
+  }

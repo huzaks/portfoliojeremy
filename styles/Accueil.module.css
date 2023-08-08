@@ -436,6 +436,25 @@ flex-direction: column;
     flex-direction: column;
   }
 }
+@media (max-width:500px) {
+  .containerabout {
+    padding: 1rem;
+  }
+  .webdev {
+    display: none;
+  }
+  .palm {
+    display: none;
+  }
+  .grid {
+    display: none;
+  }
+  .about {
+    grid-row: 1/3;
+    padding: 3rem;
+  }
+}
+
 
 /* Projects */
 
