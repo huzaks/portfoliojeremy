@@ -1,7 +1,6 @@
 import styles from "../styles/Menu.module.css";
 import Link from 'next/link';
-import { FormattedMessage } from "react-intl";
-import { useLocale } from "./LocaleProvider";
+
 export default function Menu() {
 //     const [locale, setLocale] = useLocale();
 

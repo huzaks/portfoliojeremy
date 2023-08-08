@@ -4,16 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useLocale } from "./LocaleProvider";
+
 import { FormattedMessage } from "react-intl";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
-  const [locale, setLocale] = useLocale();
 
-  const handleLocaleChange = (event) => {
-    setLocale(event.target.checked ? "en" : "fr");
-  };
+
 
   return (
     <header className={styles.header} id="home">
