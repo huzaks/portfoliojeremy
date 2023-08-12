@@ -38,6 +38,7 @@ export default function Accueil() {
       <section
         style={{
           backgroundColor: "#f3f2f2",
+          paddingTop: 6 +"rem"
         }}
       >
         <div className={styles.containerme}>
