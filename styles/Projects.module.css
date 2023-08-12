@@ -16,11 +16,11 @@
   height: 22rem;
   background: #000;
   background-position: top;
-  transition: 40s ease-in-out;
+  transition: 10s ease-in-out;
   border-radius: 15px;
 }
 .image1 {
-  background-image: url("../public/mangashop-nu.vercel.app_.png");
+  background-image: url("../public/localhost_3000_login.png");
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
