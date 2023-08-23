@@ -1,16 +1,12 @@
 import Image from "next/image";
 import styles from "../styles/Accueil.module.css";
-import mangashop from "../public/mangashop-nu.vercel.app_.png";
 import nodejs from "../public/Node.js_logo.png";
 import react from "../public/React_logo.png";
-import csharp from "../public/csharp_logo.png";
-import prisma from "../public/prisma_logo.png";
 import html5 from "../public/html5.png";
 import css3 from "../public/CSS3.png";
 import jscript from "../public/JavaScript.png";
 import tscript from "../public/Typescript_logo.png";
 import jeremy from "../public/jeremy.jpg";
-import laptop from "../public/laptop.png";
 import palm from "../public/palm.png";
 import Link from "next/link";
 import dev from "../public/devcircle.jpg";
@@ -22,9 +18,9 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { FormattedMessage } from "react-intl";
 import ProjectManga from "../components/ProjectManga";
 import ProjectEssentials from "../components/ProjectEssentials";
+
 export default function Accueil() {
   return (
     <>
@@ -36,6 +32,7 @@ export default function Accueil() {
       </Head>
 
       <section
+        id="homez"
         style={{
           backgroundColor: "#f3f2f2",
           paddingTop: 6 +"rem"
@@ -56,7 +53,7 @@ export default function Accueil() {
               }}
             >
               Next.js Full Stack Developer 💻
-              {/* <Image src={laptop} alt="Logo Next.js" height={50} width={50} /> */}
+              
             </h1>
 
             <div className={styles.introduction}>
@@ -101,11 +98,9 @@ export default function Accueil() {
       </section>
       <section id="about" className={styles.containerabout}>
         <div className={styles.gridabout}>
-          {/* <div className={styles.flipcontainer}> */}
+          
           <div className={styles.skills}>
-			{/* <h2 className={styles.skillsh2}>
-				SKILLS
-			</h2> */}
+			
           <Image
             src={palm}
             alt="palm"
@@ -133,7 +128,7 @@ export default function Accueil() {
             <div className={styles.green}>
               <Image src={react} alt="react" width={64} height={64} />
               <div className={styles.cercle}></div>
-              {/* </div> */}
+              
             </div>
           </div>
 		  </div>

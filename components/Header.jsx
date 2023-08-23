@@ -5,8 +5,6 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-import { FormattedMessage } from "react-intl";
-
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
 
@@ -38,7 +36,7 @@ export default function Header() {
 
       <ul className={isOpen ? styles.ul : styles.ul_no_show}>
         <li onClick={() => setOpen(false)}>
-          <Link href="/" className={styles.link}>
+          <Link href="/#" className={styles.link}>
             Home
           </Link>
         </li>

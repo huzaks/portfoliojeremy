@@ -5,6 +5,7 @@ import react from "../public/React_logo.png";
 import jscript from "../public/JavaScript.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 export default function ProjectEssentials() {
     return (
         <div className={styles.container}>

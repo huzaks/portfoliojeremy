@@ -5,6 +5,7 @@ import react from "../public/React_logo.png";
 import tscript from "../public/Typescript_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 export default function ProjectManga() {
     return (
         <div className={styles.container}>
