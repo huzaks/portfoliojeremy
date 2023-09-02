@@ -39,11 +39,32 @@
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
+.imagescroll3 {
+  width: 32rem;
+  height: 22rem;
+  background: #000;
+  background-position: top;
+  transition: 10s ease-in-out;
+  border-radius: 15px;
+}
+.image3 {
+  background-image: url("../public/breaditfull.png");
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
 .imagescroll:hover {
   background-position: bottom;
 }
 .imagescroll2:hover {
   background-position: bottom;
+}
+.imagescroll3:hover {
+  background-position: bottom;
+}
+.redditlink {
+  color: red;
+  text-decoration: none;
 }
 .icon {
     height: 1.1rem;
@@ -60,7 +81,51 @@
     font-weight: 600;
   }
 .link:hover {
-    color: #0a66c2;
+    color: var(--theme);
+}
+
+.learnContainer {
+  
+  z-index: 10;
+  padding-top: 5rem;
+}
+.learnBox {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+.learnItems {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.listitems {
+  padding: 1rem 2rem 1rem 2rem;
+}
+.spans {
+  font-weight: 600 ;
+  color: var(--theme);
+}
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 512px;
+}
+.madeBy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 @media (max-width:850px) {
   .container {
@@ -73,10 +138,16 @@
   .imagescroll2 {
    transition: 0s;
   }
+  .imagescroll3 {
+    transition: 0s;
+   }
   .imagescroll:hover {
     background-position: top;
   }
   .imagescroll2:hover {
+    background-position: top;
+  }
+  .imagescroll3:hover {
     background-position: top;
   }
   .link {
@@ -91,6 +162,9 @@
     width: 24rem;
   }
   .imagescroll2 {
+    width: 24rem;
+  }
+  .imagescroll3 {
     width: 24rem;
   }
   .container {
@@ -111,6 +185,9 @@
   .imagescroll2 {
     width: 20rem;
   }
+  .imagescroll3 {
+    width: 20rem;
+  }
   .container {
    width: 22rem;
     flex-direction: column;
@@ -129,11 +206,42 @@
   .imagescroll2 {
     width: 16rem;
   }
+  .imagescroll3 {
+    width: 16rem;
+  }
   .container {
    width: 18rem;
     flex-direction: column;
   }
   .link {
     margin-bottom: 1rem;
+  }
+}
+.liSlow {
+  animation: slide 2s ease-in-out;
+
+}
+.liSemi {
+  animation: slide 1.5s ease-in-out;
+}
+.liFast {
+  animation: slide 1s ease-in-out;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

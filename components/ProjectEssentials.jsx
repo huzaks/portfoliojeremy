@@ -9,7 +9,9 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 export default function ProjectEssentials() {
     return (
         <div className={styles.container}>
-            
+            <Link target="_blank" rel="noopener" href={"https://minissentials.vercel.app/"}><div className={styles.imagecontainer}>
+                <div className={`${styles.imagescroll2} ${styles.image2}`}></div>
+            </div></Link>
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -30,11 +32,9 @@ export default function ProjectEssentials() {
                     <Image src={react} alt="React.js" height={32} width={35}/>
                     <Image src={jscript} alt="JavaScript" height={32} width={32}/>
                 </div>
-                <Link href={"https://minissentials.vercel.app/"} className={styles.link}>Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icon}/></Link>
+                <Link target="_blank" rel="noopener" href={"https://minissentials.vercel.app/"} className={styles.link}>Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icon}/></Link>
             </div>
-            <Link href={"https://minissentials.vercel.app/"}><div className={styles.imagecontainer}>
-                <div className={`${styles.imagescroll2} ${styles.image2}`}></div>
-            </div></Link>
+            
             
         </div>
     )

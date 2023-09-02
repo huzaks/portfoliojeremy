@@ -17,7 +17,7 @@
   transition: 0.2s;
 }
 .link:hover {
-  color: #0a66c2;
+  color: var(--theme);
 }
 .switch input {
   display: none;

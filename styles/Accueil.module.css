@@ -5,7 +5,7 @@
   padding: 4rem 0 4rem 0;
   max-width: 60rem;
   align-items: center;
- 
+
   gap: 3rem;
 }
 .introduction {
@@ -22,14 +22,13 @@
   border: 1px solid #000;
 }
 
-
 .react {
-  color: #0a66c2;
+  color: var(--theme);
   font-weight: bold;
 }
 
 .icon {
-  color: #0a66c2;
+  color: var(--theme);
   height: 1.1rem;
 }
 .logo {
@@ -39,17 +38,16 @@
 .jeremy {
   border: 3px solid #000;
   animation: jeremy 8s ease-in-out infinite;
-  
 }
 @keyframes jeremy {
   0% {
-    border-radius: 60% 40% 50% 40% ;
+    border-radius: 60% 40% 50% 40%;
   }
   50% {
-    border-radius: 30% 60% 30% 60% ;
+    border-radius: 30% 60% 30% 60%;
   }
   100% {
-    border-radius: 60% 40% 50% 40%  ;
+    border-radius: 60% 40% 50% 40%;
   }
 }
 
@@ -62,13 +60,12 @@
   border-radius: 18px;
   box-shadow: #00000059 0px 10px 30px;
   transition: 0.3s;
-  border-top: 5px solid #0a66c2;
+  border-top: 5px solid var(--theme);
 }
 .tesing {
   display: flex;
   margin: 0 auto;
- justify-content: center;
- 
+  justify-content: center;
 }
 .lien_projets {
   margin-left: 2rem;
@@ -80,26 +77,29 @@
 }
 .icons {
   display: flex;
-    margin-top: 1.5rem;
-    gap: 1.5rem;
-    align-items: center;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 .linkedin_icon {
-    width: 30px;
-    color: black;
-    transition: 0.2s;
+  width: 30px;
+  height: 30px;
+  color: black;
+  transition: 0.2s;
 }
 .linkedin_icon:hover {
-  color: #0a66c2;
+  color: var(--theme);
 }
 .github_icon {
-    color: black;
-    width: 30px;
-    transition: 0.2s;
+  color: black;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
 }
 .github_icon:hover {
-  color: #0a66c2;
+  color: var(--theme);
 }
+
 @media (max-width: 438px) {
   .container {
     flex-direction: column;
@@ -114,20 +114,19 @@
   }
 }
 
-
 /* About */
-.containerabout{
-display: flex;
-justify-content: center;
-background-color: #fff;
-padding: 10rem;
-align-items: center;
-flex-direction: column;
+.containerabout {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10rem;
+  align-items: center;
+  flex-direction: column;
 }
 
 .skills {
   text-align: center;
-  color: #0a66c2;
+  color: var(--theme);
 
   position: relative;
   height: 100%;
@@ -136,16 +135,11 @@ flex-direction: column;
   margin: 0;
 }
 .abouth2 {
-  color: #0a66c2;
+  color: var(--theme);
   padding-top: 20px;
-
-  
-  
 }
 
-
 .scroll_container {
-
   border-radius: 5px;
   overflow: hidden;
   width: 150px;
@@ -156,11 +150,9 @@ flex-direction: column;
 }
 @keyframes my_animation {
   from {
-
     transform: translateX(100%);
   }
   to {
-
     transform: translateX(-100%);
   }
 }
@@ -176,7 +168,6 @@ flex-direction: column;
   100% {
     transform: rotate(1turn);
   }
-  
 }
 .about {
   position: relative;
@@ -186,16 +177,13 @@ flex-direction: column;
 }
 
 .gridabout {
-  
   display: grid;
   max-width: 60rem;
   height: 24rem;
   grid-template-columns: 1fr 1fr;
   border-radius: 15px;
-  
   z-index: 1;
 }
-
 
 .grid {
   height: 15rem;
@@ -311,7 +299,6 @@ flex-direction: column;
   height: 64px;
   width: 64px;
   top: 1rem;
- 
 }
 .cercle {
   position: absolute;
@@ -321,7 +308,6 @@ flex-direction: column;
   border-radius: 50%;
   bottom: 0.5rem;
   left: 32px;
-  
 }
 .palm {
   height: 12rem;
@@ -333,89 +319,89 @@ flex-direction: column;
 }
 @keyframes white {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(-65deg);
+  70% {
+    transform: rotate(-65deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes rose {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(-40deg);
+  70% {
+    transform: rotate(-40deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes bleu {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(-15deg);
+  70% {
+    transform: rotate(-15deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes mauve {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(15deg);
+  70% {
+    transform: rotate(15deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes red {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(40deg);
+  70% {
+    transform: rotate(40deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes green {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   30%,
-  70%{
-      transform: rotate(65deg);
+  70% {
+    transform: rotate(65deg);
   }
   90%,
   10% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-@media(max-width:1120px){
+@media (max-width: 1120px) {
   .gridabout {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 35rem;
   }
-  .skills{
+  .skills {
     grid-column: 1;
     grid-row: 2/3;
   }
@@ -425,18 +411,17 @@ flex-direction: column;
   .palm {
     left: 34%;
   }
-  .containerabout{
+  .containerabout {
     padding: 8rem;
   }
-  
 }
-@media (max-width:850px) {
+@media (max-width: 850px) {
   .containerme {
     width: 90%;
     flex-direction: column;
   }
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .gridabout {
     position: relative;
   }
@@ -450,7 +435,7 @@ flex-direction: column;
     display: none;
   }
   .palm {
-   left: 25%;
+    left: 25%;
   }
   .grid {
     left: 40%;
@@ -460,7 +445,7 @@ flex-direction: column;
     padding: 3rem;
   }
 }
-@media (max-width:430px) {
+@media (max-width: 430px) {
   .gridabout {
     position: relative;
   }
@@ -482,7 +467,6 @@ flex-direction: column;
   }
 }
 
-
 /* Projects */
 
 .containerprojects {
@@ -493,5 +477,4 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  
 }

@@ -18,6 +18,7 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import ProjectBreadit from "../components/ProjectBreadit";
 import ProjectManga from "../components/ProjectManga";
 import ProjectEssentials from "../components/ProjectEssentials";
 
@@ -140,6 +141,7 @@ export default function Accueil() {
         </div>
       </section>
       <section id="projects" className={styles.containerprojects}>
+        <ProjectBreadit />
         <ProjectManga />
         <ProjectEssentials />
       </section>

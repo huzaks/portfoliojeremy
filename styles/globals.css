@@ -3,6 +3,7 @@
 :root {
     --titles: #000;
     /* #c953f8*/
+    --theme: #0a66c2;
 }
 html {
   box-sizing: border-box;
