@@ -23,6 +23,15 @@
 
 .div {
   margin-right: auto;
+  animation: name 1s ;
+}
+@keyframes name {
+  from {
+    transform: translateX(-200%) scale(5);
+  }
+  to {
+    transform: translateX(0) scale(1);
+  }
 }
 .button {
   display: none;

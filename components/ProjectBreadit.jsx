@@ -8,11 +8,13 @@ import tailwind from "../public/tailwind.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-
-export default function ProjectManga() {
+import { useInView } from "react-intersection-observer";
+export default function ProjectBreadit() {
+  const { ref: myBread, inView:myBreadElement} = useInView();
 
   return (
-    <div className={styles.container}>
+    
+    <div ref={myBread} className={`${styles.container} ${myBreadElement ? styles.containerAnimation : ''}`}>
       <Link
         target="_blank"
         rel="noopener"

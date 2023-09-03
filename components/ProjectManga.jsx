@@ -6,10 +6,11 @@ import tscript from "../public/Typescript_logo.png";
 import prisma from '../public/prisma.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
+import { useInView } from "react-intersection-observer";
 export default function ProjectManga() {
+  const { ref: myManga, inView:myMangaElement} = useInView();
   return (
-    <div className={styles.container}>
+    <div ref={myManga} className={`${styles.container} ${myMangaElement ? styles.containerAnimation : ''}`}>
         <div
         style={{
           display: "flex",

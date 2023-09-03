@@ -7,6 +7,19 @@
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
+.containerAnimation {
+  animation: container-animation 2s ease-in-out;
+}
+@keyframes container-animation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .imagecontainer {
   width: 32rem;
   border-radius: 15px;
@@ -126,6 +139,90 @@
   padding: 2rem;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
+}
+.firstUL {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  list-style:url('../public/favicon.png') ;
+  
+}
+.animateUL {
+  animation-duration:1s ;
+  animation-name: animate-ul;
+}
+.animateUL:nth-child(2) {
+  animation-duration:1.2s ;
+}
+.animateUL:nth-child(3) {
+  animation-duration:1.4s ;
+}
+.animateUL:nth-child(4) {
+  animation-duration:1.6s ;
+}
+.animateUL:nth-child(5) {
+  animation-duration:1.8s ;
+}
+.animateUL:nth-child(6) {
+  animation-duration:2s ;
+}
+.animateUL:nth-child(7) {
+  animation-duration:2.2s ;
+}
+.animateUL:nth-child(8) {
+  animation-duration:2.4s ;
+}
+.animateUL:nth-child(9) {
+  animation-duration:2.6s ;
+}
+.animateUL:nth-child(10) {
+  animation-duration:2.8s ;
+}
+.animateUL:nth-child(11) {
+  animation-duration:3s ;
+}
+.animateUL:nth-child(12) {
+  animation-duration:3.2s ;
+}
+
+.animateUL:nth-child(4) {
+  animation-duration:1.6s ;
+}
+.animateUL:nth-child(5) {
+  animation-duration:1.8s ;
+}
+.animateUL:nth-child(6) {
+  animation-duration:2s ;
+}
+.animateUL:nth-child(7) {
+  animation-duration:2.2s ;
+}
+.animateUL:nth-child(8) {
+  animation-duration:2.4s ;
+}
+.animateUL:nth-child(9) {
+  animation-duration:2.6s ;
+}
+.animateUL:nth-child(10) {
+  animation-duration:2.8s ;
+}
+.animateUL:nth-child(11) {
+  animation-duration:3s ;
+}
+.animateUL:nth-child(12) {
+  animation-duration:3.2s ;
+}
+
+@keyframes animate-ul {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 @media (max-width:850px) {
   .container {

@@ -5,10 +5,11 @@ import react from "../public/React_logo.png";
 import jscript from "../public/JavaScript.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
+import { useInView } from "react-intersection-observer";
 export default function ProjectEssentials() {
+    const { ref: myEsse, inView:myEsseElement} = useInView();
     return (
-        <div className={styles.container}>
+        <div ref={myEsse} className={`${styles.container} ${myEsseElement ? styles.containerAnimation : ''}`}>
             <Link target="_blank" rel="noopener" href={"https://minissentials.vercel.app/"}><div className={styles.imagecontainer}>
                 <div className={`${styles.imagescroll2} ${styles.image2}`}></div>
             </div></Link>

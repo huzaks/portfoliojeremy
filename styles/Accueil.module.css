@@ -5,9 +5,61 @@
   padding: 4rem 0 4rem 0;
   max-width: 60rem;
   align-items: center;
-
   gap: 3rem;
 }
+.titleAnimation {
+  animation: title-animation 1.5s ease-in-out;
+}
+@keyframes title-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.descAnimation {
+  animation: desc-animation 1.5s ease-in-out;
+}
+@keyframes desc-animation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.linkedinAnimation {
+  animation: linkedin-animation 1.5s ease-in-out;
+}
+@keyframes linkedin-animation {
+  from {
+    opacity: 0;
+    transform: translate(-100%, 150%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.githubAnimation {
+  animation: github-animation 1.5s ease-in-out;
+}
+@keyframes github-animation {
+  from {
+    opacity: 0;
+    transform: translate(100%, 150%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .introduction {
   font-weight: 600;
 }
@@ -39,6 +91,7 @@
   border: 3px solid #000;
   animation: jeremy 8s ease-in-out infinite;
 }
+
 @keyframes jeremy {
   0% {
     border-radius: 60% 40% 50% 40%;
@@ -99,6 +152,35 @@
 .github_icon:hover {
   color: var(--theme);
 }
+.rocket {
+  display: inline-block;
+  font-size: larger;
+}
+.animateRocket {
+  animation-duration: 5s;
+  animation-name: animate-rocket;
+}
+@keyframes animate-rocket {
+  0% {
+    transform: scale(1) rotate(10deg);
+  }
+  5% {
+    transform: scale(1.25) rotate(-15deg);
+  }
+  10% {
+    transform: scale(1.5) rotate(5deg);
+  }
+  15% {
+    transform: scale(1.75) rotate(-10deg);
+  }
+  20% {
+    transform: scale(2) rotate(0);
+  }
+  100% {
+    transform: scale(20) translate(100vw, -100vh) rotate(0);
+  }
+  
+}
 
 @media (max-width: 438px) {
   .container {
@@ -119,7 +201,7 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
-  padding: 10rem;
+  padding: 20rem 10rem;
   align-items: center;
   flex-direction: column;
 }
@@ -138,6 +220,20 @@
   color: var(--theme);
   padding-top: 20px;
 }
+.abouth2Animation {
+  animation: abouth2-animation 1.5s ease-in-out;
+}
+@keyframes abouth2-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .scroll_container {
   border-radius: 5px;
@@ -471,7 +567,7 @@
 
 .containerprojects {
   display: flex;
-  padding: 10rem 0 10rem 0;
+  padding: 6rem 0 10rem 0;
   background-color: #f3f2f2;
   justify-content: center;
   flex-direction: column;
