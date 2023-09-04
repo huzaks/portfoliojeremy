@@ -35,9 +35,9 @@ export default function Accueil() {
     <>
       <Head>
         <title>Portfolio</title>
-        <meta name="description" content="Présentation de mon profil." />
-        <meta property="og:title" content="Accueil" />
-        <meta property="og:description" content="Présentation de mon profil." />
+        <meta name="description" content="My portfolio." />
+        <meta property="og:title" content="Portfolio" />
+        <meta property="og:description" content="Presentation of my profile." />
       </Head>
 
       <section
