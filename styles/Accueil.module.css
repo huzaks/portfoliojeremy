@@ -6,6 +6,7 @@
   max-width: 60rem;
   align-items: center;
   gap: 3rem;
+  justify-content: center;
 }
 .titleAnimation {
   animation: title-animation 1.5s ease-in-out;
@@ -62,6 +63,7 @@
 
 .introduction {
   font-weight: 600;
+  max-width: 30rem;
 }
 .projects {
   display: flex;

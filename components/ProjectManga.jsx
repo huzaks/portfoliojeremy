@@ -11,6 +11,11 @@ export default function ProjectManga() {
   const { ref: myManga, inView:myMangaElement} = useInView();
   return (
     <div ref={myManga} className={`${styles.container} ${myMangaElement ? styles.containerAnimation : ''}`}>
+      <Link target="_blank" rel="noopener" href={"https://mangashop-nu.vercel.app/"}>
+        <div className={styles.imagecontainer}>
+          <div className={`${styles.imagescroll} ${styles.image1}`}></div>
+        </div>
+      </Link>
         <div
         style={{
           display: "flex",
@@ -50,11 +55,7 @@ export default function ProjectManga() {
           />
         </Link>
       </div>
-      <Link target="_blank" rel="noopener" href={"https://mangashop-nu.vercel.app/"}>
-        <div className={styles.imagecontainer}>
-          <div className={`${styles.imagescroll} ${styles.image1}`}></div>
-        </div>
-      </Link>
+      
       
     </div>
   );

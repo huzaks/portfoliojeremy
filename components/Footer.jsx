@@ -16,12 +16,15 @@ export default function Footer() {
           display: "flex",
           flexDirection: "column"
         }}>
+          <div className={styles.contact}>
+            Contact me &#10140;{" "}
           <Link
             className={styles.email}
             href={"mailto:jeremylavalleegiroux@gmail.com"}
           >
             jeremylavalleegiroux@gmail.com
           </Link>
+          </div>
           <div className={styles.icons}>
             <Link
               href={"https://linkedin.com/in/jérémy-lavallée-giroux-159b40201"}

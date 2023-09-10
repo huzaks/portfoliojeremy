@@ -22,6 +22,7 @@ import {
 import ProjectBreadit from "../components/ProjectBreadit";
 import ProjectManga from "../components/ProjectManga";
 import ProjectEssentials from "../components/ProjectEssentials";
+import ProjectWorkout from "../components/ProjectWorkout";
 
 export default function Accueil() {
 
@@ -63,18 +64,17 @@ export default function Accueil() {
               }}
               className={`${myHomeElement ? styles.titleAnimation: ''}`}
             >
-              Next.js Full Stack Developer 💻
+              Web Developer 💻
             </h1>
 
             <div className={`${styles.introduction} ${myHomeElement ? styles.descAnimation: ''}`}>
-              Hello, I&apos;m Jérémy Lavallée-Giroux, a fullstack developer with
-              the
+              Hello, I&apos;m Jérémy Lavallée-Giroux, a junior web developer with
               <span className={styles.react}>
                 {" "}
                 React.js{" "}
                 <FontAwesomeIcon icon={faReact} className={styles.icon} />
-              </span>{" "}
-              framework Next.js.
+              </span> looking for job opportunities in front end developement. Here is my portfolio of projets.
+              
             </div>
             <div className={styles.icons}>
               <Link
@@ -95,15 +95,7 @@ export default function Accueil() {
               </Link>
             </div>
           </div>
-          <Image
-            src={jeremy}
-            width={350}
-            height={350}
-            className={`${styles.jeremy}`}
-            alt="Image de Jeremy"
-            priority
-            title="Image de Jeremy"
-          ></Image>
+          
         </div>
       </section>
       <section ref={myAbout} id="about" className={styles.containerabout}>
@@ -143,7 +135,7 @@ export default function Accueil() {
             <h2 className={`${styles.abouth2} ${myAboutElement ? styles.abouth2Animation : ''}`}>ABOUT ME</h2>
             <div className={`${myAboutElement ? styles.abouth2Animation : ''}`}>
             As a junior web developer, I can craft websites from scratch using
-            my programming knowledge in React, CSS and JavaScript. Passionnate
+            my programming knowledge in HTML5, CSS, JavaScript and React. Passionnate
             about web developement, I improve my skills everyday by crafting
             dynamic, engaging, and easy-to-use web applications.
             </div>
@@ -156,6 +148,7 @@ export default function Accueil() {
 
         </div>
         <ProjectBreadit />
+        <ProjectWorkout />
         <ProjectManga />
         <ProjectEssentials />
       </section>

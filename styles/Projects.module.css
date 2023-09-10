@@ -29,7 +29,7 @@
   height: 22rem;
   background: #000;
   background-position: top;
-  transition: 10s ease-in-out;
+  transition: 8s ease-in-out;
   border-radius: 15px;
 }
 .image1 {
@@ -66,6 +66,20 @@
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
+.imagescroll4 {
+  width: 32rem;
+  height: 22rem;
+  background: #000;
+  background-position: top;
+  transition: 10s ease-in-out;
+  border-radius: 15px;
+}
+.image4 {
+  background-image: url("../public/d-workout.vercel.app_.png");
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
 .imagescroll:hover {
   background-position: bottom;
 }
@@ -73,6 +87,9 @@
   background-position: bottom;
 }
 .imagescroll3:hover {
+  background-position: bottom;
+}
+.imagescroll4:hover {
   background-position: bottom;
 }
 .redditlink {
@@ -238,6 +255,9 @@
   .imagescroll3 {
     transition: 0s;
    }
+   .imagescroll4 {
+    transition: 0s;
+   }
   .imagescroll:hover {
     background-position: top;
   }
@@ -245,6 +265,9 @@
     background-position: top;
   }
   .imagescroll3:hover {
+    background-position: top;
+  }
+  .imagescroll4:hover {
     background-position: top;
   }
   .link {
@@ -262,6 +285,9 @@
     width: 24rem;
   }
   .imagescroll3 {
+    width: 24rem;
+  }
+  .imagescroll4 {
     width: 24rem;
   }
   .container {
@@ -285,6 +311,9 @@
   .imagescroll3 {
     width: 20rem;
   }
+  .imagescroll4 {
+    width: 20rem;
+  }
   .container {
    width: 22rem;
     flex-direction: column;
@@ -304,6 +333,9 @@
     width: 16rem;
   }
   .imagescroll3 {
+    width: 16rem;
+  }
+  .imagescroll4 {
     width: 16rem;
   }
   .container {
