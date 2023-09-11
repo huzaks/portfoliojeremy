@@ -69,7 +69,7 @@ export default function ProjectWorkout() {
       <Link
         target="_blank"
         rel="noopener"
-        href={"https://breadit-reddit-clone-alpha.vercel.app/"}
+        href={"https://d-workout.vercel.app/"}
       >
         <div className={styles.imagecontainer}>
           <div className={`${styles.imagescroll4} ${styles.image4}`}></div>
