@@ -7,9 +7,12 @@
   box-shadow: 0 0 10px rgba(0,0,0,.2);
   margin-bottom: 10px;
   position: fixed;
-  width: 100%;
-  top: 0;
+  width: 90%;
+  top: 1rem;
   z-index: 15;
+  border-radius: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .titre {
@@ -111,7 +114,7 @@
   z-index: 2;
   transition: all 0.3s;
   animation: ul 0.3s ;
-  left: -100%;
+  left: -200%;
 }
 .ul_show {
   position: absolute;
@@ -172,6 +175,11 @@ input:checked + .slider::before {
   .header {
     height: 5rem;
     justify-content: center;
+    left: 0;
+  transform: translateX(0);
+  border-radius: 0;
+  top: 0;
+  width: 100%;
   }
 
   .button {

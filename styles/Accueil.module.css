@@ -15,7 +15,7 @@
   from {
     opacity: 0;
     transform: translateY(-100%);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -28,7 +28,7 @@
   from {
     opacity: 0;
     transform: translateX(-100%);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -41,7 +41,7 @@
   from {
     opacity: 0;
     transform: translate(-100%, 150%);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -54,7 +54,7 @@
   from {
     opacity: 0;
     transform: translate(100%, 150%);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -70,7 +70,6 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
- 
 }
 .display {
   border: 1px solid #000;
@@ -181,7 +180,6 @@
   100% {
     transform: scale(20) translate(100vw, -100vh) rotate(0);
   }
-  
 }
 
 @media (max-width: 438px) {
@@ -229,13 +227,12 @@
   from {
     opacity: 0;
     transform: translateY(-100%);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 
 .scroll_container {
   border-radius: 5px;
@@ -493,6 +490,20 @@
     transform: rotate(0deg);
   }
 }
+.sectionContact {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rem 10rem;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 5rem;
+}
+.connect {
+  align-self: flex-start;
+  max-width: 20rem;
+}
+
 @media (max-width: 1120px) {
   .gridabout {
     grid-template-columns: 1fr;
@@ -517,6 +528,11 @@
   .containerme {
     width: 90%;
     flex-direction: column;
+  }
+  .sectionContact {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 }
 @media (max-width: 500px) {

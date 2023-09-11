@@ -51,8 +51,8 @@ export default function Header() {
           </Link>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href="/#contacts" className={styles.link}>
-            Contacts
+          <Link href="/#contact" className={styles.link}>
+            Contact
           </Link>
         </li>
       </ul>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className={styles.footer} id="contacts">
+      <footer className={styles.footer}>
         <div style={{
           display: "flex",
           alignItems:"center",

@@ -13,6 +13,7 @@ import dev from "../public/devcircle.jpg";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -23,6 +24,7 @@ import ProjectBreadit from "../components/ProjectBreadit";
 import ProjectManga from "../components/ProjectManga";
 import ProjectEssentials from "../components/ProjectEssentials";
 import ProjectWorkout from "../components/ProjectWorkout";
+import { Contact } from "../components/Contact";
 
 export default function Accueil() {
 
@@ -45,7 +47,10 @@ export default function Accueil() {
         id="homez"
         style={{
           backgroundColor: "#f3f2f2",
-          paddingTop: 6 + "rem",
+          paddingTop: 20 + "rem",
+          paddingBottom: 20 + "rem",
+          paddingLeft: 10 + 'rem',
+          paddingRight: 10 + 'rem',
         }}
         ref={myHome}
       >
@@ -151,6 +156,26 @@ export default function Accueil() {
         <ProjectWorkout />
         <ProjectManga />
         <ProjectEssentials />
+      </section>
+      <section className={styles.sectionContact} id="contact">
+        <div className={styles.connect}>
+            <h3>Let&apos;s connect</h3>
+            <div>I&apos;m currently looking for new opportunities, my inbox is alway open. If you have any questions, leave your email and your message. I will message you back!</div>
+            <div className={styles.icons}>
+            <Link
+              href={"https://linkedin.com/in/jérémy-lavallée-giroux-159b40201"}
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className={styles.linkedin_icon}
+              />
+            </Link>
+            <Link href={"https://github.com/huzaks"}>
+              <FontAwesomeIcon icon={faGithub} className={styles.github_icon} />
+            </Link>
+          </div>
+        </div>
+        <Contact />
       </section>
     </>
   );
