@@ -11,33 +11,12 @@ export default function Footer() {
           alignItems:"center",
           fontSize: 20 + "px",
           color: "#fff"
-        }}>Copyright © 2023. All rights reserved</div>
+        }}>Copyright Jérémy Lavallée-Giroux © 2023. All rights reserved.</div>
         <div style={{
           display: "flex",
           flexDirection: "column"
         }}>
-          <div className={styles.contact}>
-            Contact me &#10140;{" "}
-          <Link
-            className={styles.email}
-            href={"mailto:jeremylavalleegiroux@gmail.com"}
-          >
-            jeremylavalleegiroux@gmail.com
-          </Link>
-          </div>
-          <div className={styles.icons}>
-            <Link
-              href={"https://linkedin.com/in/jérémy-lavallée-giroux-159b40201"}
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className={styles.linkedin_icon}
-              />
-            </Link>
-            <Link href={"https://github.com/huzaks"}>
-              <FontAwesomeIcon icon={faGithub} className={styles.github_icon} />
-            </Link>
-          </div>
+          
         </div>
       </footer>
     </>
