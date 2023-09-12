@@ -169,7 +169,7 @@ export default function Accueil() {
                 </div>
 
                 <a
-                  href={"/JeremyLavalleeGirouxCV.pdf"}
+                  href={"/portfoliojeremy/JeremyLavalleeGirouxCV.pdf"}
                   target="_blank"
                   rel="noreferrer"
                   className={styles.linkResume}
