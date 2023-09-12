@@ -45,8 +45,7 @@ export default function ProjectBreadit() {
           <Link className={styles.redditlink} href={"https://www.reddit.com/"}>
             Reddit
           </Link>{" "}
-          clone where it is possible to sign up using google, create
-          communities, create posts, comment on these posts, vote up or down
+          clone from a complete Youtube tutorial. Tons of features were in the project but I&apos;ve added a ton more to make it my own. It is possible to sign up using google, create communities, create posts, comment, vote up or down
           comments and posts, view user pages, manage your profile, and more!
         </div>
         <div

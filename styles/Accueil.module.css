@@ -8,6 +8,12 @@
   gap: 3rem;
   justify-content: center;
 }
+.generalBlue {
+  color: var(--theme);
+}
+.generalBold {
+  font-weight: 900;
+}
 .titleAnimation {
   animation: title-animation 1.5s ease-in-out;
 }
@@ -161,6 +167,15 @@
   animation-duration: 5s;
   animation-name: animate-rocket;
 }
+.linkResume {
+  color: black;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  width: fit-content;
+}
+.linkResume:hover {
+  text-decoration: underline;
+}
 @keyframes animate-rocket {
   0% {
     transform: scale(1) rotate(10deg);
@@ -205,6 +220,12 @@
   align-items: center;
   flex-direction: column;
 }
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 30rem;
+}
 
 .skills {
   text-align: center;
@@ -217,11 +238,40 @@
   margin: 0;
 }
 .abouth2 {
+  font-size: 20px;
   color: var(--theme);
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
+
 }
 .abouth2Animation {
   animation: abouth2-animation 1.5s ease-in-out;
+}
+.mySkills {
+  display: flex;
+  gap: 5rem;
+}
+.gridSkills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.gridSkills div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsIcons {
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: 150ms;
+  color: rgb(119, 119, 119);
+  cursor: pointer;
+}
+.skillsIcons:hover {
+  transform: scale(1.2);
+  color: var(--theme);
 }
 @keyframes abouth2-animation {
   from {
@@ -264,11 +314,11 @@
     transform: rotate(1turn);
   }
 }
-.about {
-  position: relative;
-  text-align: left;
-  background-color: #fff;
+.bigAbout {
+display: flex;
+flex-direction: column;
   font-weight: 500;
+  gap: 3rem;
 }
 
 .gridabout {
@@ -278,6 +328,16 @@
   grid-template-columns: 1fr 1fr;
   border-radius: 15px;
   z-index: 1;
+}
+.aboutFlex {
+  display: flex;
+  max-width: 60rem;
+  z-index: 1;
+  flex-direction: row;
+}
+.about {
+  display: flex;
+  gap: 5rem;
 }
 
 .grid {
@@ -503,6 +563,18 @@
   align-self: flex-start;
   max-width: 20rem;
 }
+.email {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  transition: 150ms;
+}
+.email:hover {
+  text-decoration: none;
+  color: var(--theme);
+
+}
 
 @media (max-width: 1120px) {
   .gridabout {
@@ -534,6 +606,21 @@
     align-items: center;
     padding: 1rem;
   }
+  .about {
+    flex-direction: column;
+  }
+  .mySkills {
+    flex-direction: column;
+  }
+  
+  .abouth2 {
+    text-align: center;
+  }
+  .gridSkills {
+    grid-template-columns: repeat(3, 1fr);
+    gap:0;
+  }
+ 
 }
 @media (max-width: 500px) {
   .gridabout {
